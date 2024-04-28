@@ -14,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../image/background.gif),url(../image/background.png);
+    background-image: url(../images/background.gif),url(../images/background.png);
     background-size: cover;
     background-position: center;
 }
