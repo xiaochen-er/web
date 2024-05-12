@@ -11,13 +11,13 @@
 </head>
 <body>
 
-    <form action="login.java" class="login-form" method="post" style="display:block;">
+    <form action="/login" class="login-form" method="post" style="display:block;">
 
         <h1 class="login-title">登录</h1>
 
         <div class="input-box">
             <i class='bx bxs-user' ></i>
-            <input type="text" name="Username" placeholder="用户名" pattern="^[a-zA-Z][a-zA-Z0-9_]{4,15}$" oninvalid="setCustomValidity('字母开头，允许5-16字节，允许字母数字下划线');" oninput="setCustomValidity('');" required/>
+            <input type="text" name="Username" placeholder="用户名" pattern="^[a-zA-Z][a-zA-Z0-9_]{4,15}$" oninvalid="setCustomValidity('字母开头，允许5-16字节，允许字母数字下划线');" oninput="setCustomValidity('');" required>
         </div>
 
         <div class="input-box">
@@ -42,7 +42,7 @@
 
     </form>
     
-    <form action="register.java" class="register-form" method="post" style="display:none;">
+    <form action="/register" class="register-form" method="post" style="display:none;">
 
         <h1 class="register-title">注册</h1>
 
@@ -75,7 +75,7 @@
 
     </form>
 
-    <form action="retrieve.java" class="retrieve-form" method="post" style="display:none;">
+    <form action="/retrieve" class="retrieve-form" method="post" style="display:none;">
 
         <h1 class="retrieve-title">找回</h1>
 
