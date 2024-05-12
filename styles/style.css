@@ -14,7 +14,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../images/background.gif),url(../images/background.png);
+    /*background-image: url(../images/background.gif),url(../images/background.png);*/
+    background-image: url(../images/background.png);
     background-size: cover;
     background-position: center;
 }
@@ -123,15 +124,16 @@ body {
     text-decoration: underline;
 }
 .mmm {
+    color: white;
     position: fixed;
     bottom: 20px;
     left: 0;
     text-align: center;
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 1px;
 }
-.mmm a {
+.mmm  a {
     color: white;
     text-decoration: none;
 }
