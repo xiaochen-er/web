@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="img/title.png" type="images/png">
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
     <title>登录界面</title>
 </head>
 <body>
@@ -96,6 +99,7 @@
         </p>
 
     </form>
+
     <div class="mmm">
         © 2024 <a href="/">xiaochen_er</a><br>
         <a href="https://icp.gov.moe/?keyword=20240211" target="_blank">萌ICP备20240211号</a>
@@ -103,7 +107,31 @@
         <a href='https://ipw.cn/ipv6webcheck/?site=xiao2024.cn' title="本站支持IPv6访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持IPv6访问" src="https://static.ipw.cn/icon/ipv6-s1.svg"></a>
         <a href='https://ipw.cn/ssl/?site=xiao2024.cn' title="本站支持SSL安全访问" target='_blank'><img style='display:inline-block;vertical-align:middle' alt="本站支持SSL安全访问" src="https://static.ipw.cn/icon/ssl-s1.svg"></a>
     </div>
+
 <script src="/js/sakura.js"></script>
+
+<script>
+    $("body").show();
+    $(".version").text(NProgress.version);
+    NProgress.start();
+    setTimeout(function () {
+        NProgress.done();
+        $(".fade").removeClass("out");
+    }, 1000);
+
+    $("#b-0").click(function () {
+        NProgress.start();
+    });
+    $("#b-40").click(function () {
+        NProgress.set(0.4);
+    });
+    $("#b-inc").click(function () {
+        NProgress.inc();
+    });
+    $("#b-100").click(function () {
+        NProgress.done();
+    });
+</script>
 </body>
 <script>
     function showLoginBox() {
