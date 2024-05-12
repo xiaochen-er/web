@@ -122,3 +122,19 @@ body {
 .login a:hover,.register a:hover,.back a:hover {
     text-decoration: underline;
 }
+.mmm {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+.mmm a {
+    color: white;
+    text-decoration: none;
+}
+.mmm a:hover {
+    color: rgba(167, 29, 84, 0.35);
+}
