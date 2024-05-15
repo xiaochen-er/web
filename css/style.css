@@ -15,8 +15,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: rgba(167, 29, 84, 0.35);
-    /*background-image: url(../images/background.gif),url(../images/background.png);*/
-    background-image: url(../img/background.png);
+    /*background-image: url(../images/background.gif),url(../images/background.jpg);*/
+    background-image: url(../img/background.jpg);
     background-size: cover;
     background-position: center;
 }
